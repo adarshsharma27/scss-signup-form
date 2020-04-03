@@ -1,0 +1,207 @@
+* {
+  font-family: 'Muli',sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #6C5DBD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container {
+  width: 550px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #6C5DBD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .form {
+  width: 300px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 5px #dadada, -2px -2px 5px #fafafa;
+          box-shadow: 2px 2px 5px #dadada, -2px -2px 5px #fafafa;
+  border-radius: 15px;
+  -webkit-animation: yourAnimation 1.5s forwards 0s ease-in-out;
+          animation: yourAnimation 1.5s forwards 0s ease-in-out;
+}
+
+.main-container input {
+  font-size: 16px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 10px;
+  width: 250px;
+  height: 50px;
+  margin-top: 15px;
+  outline: none;
+  caret-color: #522652;
+  background-color: #F4F5FF;
+  padding-left: 15px;
+}
+
+.main-container .input-grp {
+  position: relative;
+}
+
+.main-container .input-grp span {
+  position: absolute;
+  top: 29px;
+  background-color: #F4F5FF;
+  left: 40px;
+  font-size: inherit;
+  font-family: inherit;
+  color: #B1B7B4;
+  -webkit-transition: all 0.5s  ease-in-out;
+  transition: all 0.5s  ease-in-out;
+  outline: none;
+  pointer-events: none;
+}
+
+.main-container ::-webkit-input-placeholder {
+  color: #B1B7B4;
+}
+
+.main-container :-ms-input-placeholder {
+  color: #B1B7B4;
+}
+
+.main-container ::-ms-input-placeholder {
+  color: #B1B7B4;
+}
+
+.main-container ::placeholder {
+  color: #B1B7B4;
+}
+
+.main-container .form button {
+  width: 160px;
+  height: 40px;
+  background-color: #6C5DBD;
+  color: white;
+  border: 1px solid #6C5DBD;
+  margin-top: 35px;
+  border-radius: 6px;
+  word-spacing: 1px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.main-container .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 35%;
+}
+
+.main-container .fa {
+  -webkit-box-shadow: inset 10px 10px 10px #F4F5FF, inset -10px -10px 10px #fafafa;
+          box-shadow: inset 10px 10px 10px #F4F5FF, inset -10px -10px 10px #fafafa;
+  width: 55px;
+  height: 55px;
+  border-radius: 10%;
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #8477d8;
+}
+
+.main-container .fa:hover {
+  color: #6C5DBD;
+  -webkit-box-shadow: 5px 5px 5px #dadada, -5px -5px 5px #fafafa;
+          box-shadow: 5px 5px 5px #dadada, -5px -5px 5px #fafafa;
+}
+
+@-webkit-keyframes yourAnimation {
+  0% {
+    -webkit-transform: translateY(-700px);
+            transform: translateY(-700px);
+  }
+  26% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+  }
+  60% {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
+  86% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  94% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes yourAnimation {
+  0% {
+    -webkit-transform: translateY(-700px);
+            transform: translateY(-700px);
+  }
+  26% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+  }
+  60% {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
+  86% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  94% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.main-container input:focus ~ span {
+  top: 6px;
+  left: 195px;
+  background-color: transparent;
+}
+
+.main-container input:focus {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+/*# sourceMappingURL=form.css.map */
